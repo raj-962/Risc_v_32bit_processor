@@ -1,0 +1,173 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue May 13 11:18:23 2025
+[*]
+[dumpfile] "C:\Users\rajsh\OneDrive\Desktop\project_1\codes\cpu.vcd"
+[dumpfile_mtime] "Tue May 13 10:55:38 2025"
+[dumpfile_size] 11898
+[savefile] "C:\Users\rajsh\OneDrive\Desktop\project_1\codes\project_1_all_signals.gtkw"
+[timestart] 52
+[size] 1366 697
+[pos] -35 -35
+*-3.539412 68 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Top_Module_tb.
+[treeopen] Top_Module_tb.uut.
+[sst_width] 197
+[signals_width] 324
+[sst_expanded] 1
+[sst_vpaned_height] 187
+@28
+Top_Module_tb.clk
+@200
+-
+@28
+Top_Module_tb.rst
+@200
+-program counter
+@24
+Top_Module_tb.uut.PC.pc_in[31:0]
+Top_Module_tb.uut.PC.pc_out[31:0]
+@200
+-program counter adder +4
+@24
+Top_Module_tb.uut.Pc_adder.NexttoPc[31:0]
+Top_Module_tb.uut.Pc_adder.fromPc[31:0]
+@200
+-adder
+@24
+Top_Module_tb.uut.adder_logic.Sum_out[31:0]
+Top_Module_tb.uut.adder_logic.in_1[31:0]
+Top_Module_tb.uut.adder_logic.in_2[31:0]
+@200
+-alu control
+@28
+Top_Module_tb.uut.alu_control.ALUOp[1:0]
+@22
+Top_Module_tb.uut.alu_control.Control_out[3:0]
+@28
+Top_Module_tb.uut.alu_control.fun3[2:0]
+Top_Module_tb.uut.alu_control.fun7
+@200
+-alu unit
+@24
+Top_Module_tb.uut.alu_unit.ALU_out[31:0]
+Top_Module_tb.uut.alu_unit.A[31:0]
+Top_Module_tb.uut.alu_unit.B[31:0]
+@22
+Top_Module_tb.uut.alu_unit.control_in[3:0]
+@28
+Top_Module_tb.uut.alu_unit.zero
+@200
+-control unit
+@28
+Top_Module_tb.uut.control_unit.ALUOp[1:0]
+Top_Module_tb.uut.control_unit.ALUSrc
+Top_Module_tb.uut.control_unit.MemWrite
+Top_Module_tb.uut.control_unit.Memread
+Top_Module_tb.uut.control_unit.MemtoReg
+Top_Module_tb.uut.control_unit.Reg_write
+Top_Module_tb.uut.control_unit.branch
+@22
+Top_Module_tb.uut.control_unit.instruction[6:0]
+@200
+-data memory
+@28
+Top_Module_tb.uut.data_memory.Mem_Read
+Top_Module_tb.uut.data_memory.Mem_Write
+@24
+Top_Module_tb.uut.data_memory.Mem_data_out[31:0]
+Top_Module_tb.uut.data_memory.Read_addr[31:0]
+Top_Module_tb.uut.data_memory.Write_Data[31:0]
+@200
+-instruction memory
+@24
+Top_Module_tb.uut.instruction_mem.instruction_out[31:0]
+Top_Module_tb.uut.instruction_mem.read_addr[31:0]
+@200
+-alu mux
+@24
+Top_Module_tb.uut.mux_1_Alu.A1[31:0]
+Top_Module_tb.uut.mux_1_Alu.B1[31:0]
+Top_Module_tb.uut.mux_1_Alu.Mux1_out[31:0]
+@28
+Top_Module_tb.uut.mux_1_Alu.Sel1
+@200
+-adder mux pc
+@24
+Top_Module_tb.uut.mux_2_adder_pc.A2[31:0]
+Top_Module_tb.uut.mux_2_adder_pc.B2[31:0]
+Top_Module_tb.uut.mux_2_adder_pc.Mux2_out[31:0]
+@28
+Top_Module_tb.uut.mux_2_adder_pc.Sel2
+@200
+-data mem mux
+@24
+Top_Module_tb.uut.mux_3_data_mem.A3[31:0]
+@c00024
+Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+@28
+(0)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(1)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(2)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(3)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(4)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(5)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(6)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(7)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(8)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(9)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(10)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(11)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(12)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(13)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(14)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(15)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(16)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(17)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(18)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(19)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(20)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(21)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(22)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(23)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(24)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(25)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(26)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(27)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(28)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(29)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(30)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+(31)Top_Module_tb.uut.mux_3_data_mem.B3[31:0]
+@1401204
+-group_end
+@24
+Top_Module_tb.uut.mux_3_data_mem.Mux3_out[31:0]
+@28
+Top_Module_tb.uut.mux_3_data_mem.Sel3
+@200
+-register file
+@29
+Top_Module_tb.uut.reg_file.Reg_write
+@22
+Top_Module_tb.uut.reg_file.Rs1[4:0]
+Top_Module_tb.uut.reg_file.Rs2[4:0]
+Top_Module_tb.uut.reg_file.Rd[4:0]
+@24
+Top_Module_tb.uut.reg_file.read_data1[31:0]
+Top_Module_tb.uut.reg_file.read_data2[31:0]
+Top_Module_tb.uut.reg_file.write_data[31:0]
+@200
+-immidiate generator
+@24
+Top_Module_tb.uut.u_Immidiate_generator.ImmExt[31:0]
+Top_Module_tb.uut.u_Immidiate_generator.Opcode[6:0]
+Top_Module_tb.uut.u_Immidiate_generator.instruction[31:0]
+@200
+-and gate
+@24
+Top_Module_tb.uut.u_and_gate.and_out
+@28
+Top_Module_tb.uut.u_and_gate.branch
+Top_Module_tb.uut.u_and_gate.zero
+[pattern_trace] 1
+[pattern_trace] 0

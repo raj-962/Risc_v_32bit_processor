@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue May 13 14:14:24 2025
+[*]
+[dumpfile] "C:\Users\rajsh\OneDrive\Desktop\project_1\codes\cpu.vcd"
+[dumpfile_mtime] "Tue May 13 13:31:23 2025"
+[dumpfile_size] 75279
+[savefile] "C:\Users\rajsh\OneDrive\Desktop\project_1\codes\final_output.gtkw"
+[timestart] 0
+[size] 1366 697
+[pos] -139 -90
+*-5.000000 84 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Top_Module_tb.
+[treeopen] Top_Module_tb.uut.
+[sst_width] 197
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 187
+@28
+Top_Module_tb.clk
+Top_Module_tb.rst
+@24
+Top_Module_tb.uut.PC.pc_in[31:0]
+Top_Module_tb.uut.PC.pc_out[31:0]
+Top_Module_tb.uut.instruction_mem.read_addr[31:0]
+Top_Module_tb.uut.instruction_mem.instruction_out[31:0]
+Top_Module_tb.uut.reg_file.Reg_write
+Top_Module_tb.uut.reg_file.Rs1[4:0]
+Top_Module_tb.uut.reg_file.Rs2[4:0]
+Top_Module_tb.uut.reg_file.Rd[4:0]
+@421
+Top_Module_tb.uut.reg_file.read_data1[31:0]
+@420
+Top_Module_tb.uut.reg_file.read_data2[31:0]
+Top_Module_tb.uut.reg_file.write_data[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
