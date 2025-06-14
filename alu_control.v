@@ -2,7 +2,7 @@
 
 module alu_control ( ALUOp , fun7 , fun3 , Control_out );
 
-input fun7;
+input [6:0]fun7;
 input [2:0]fun3;
 input [1:0]ALUOp;
 output reg [3:0]Control_out;
@@ -10,14 +10,29 @@ output reg [3:0]Control_out;
 always@(*)
 begin
     case({ALUOp,fun7,fun3})
+    12'b10_0000000_000 : Control_out <= 4'b0000;    // ADD 
+    12'b00_0000000_000 : Control_out <= 4'b0000;    // ADD 
+    12'b00_0000000_001 : Control_out <= 4'b0000;    // ADD 
+    12'b00_0000000_010 : Control_out <= 4'b0000;    // ADD 
+    12'b10_0100000_000 : Control_out <= 4'b0001;    // SUB 
+    12'b10_0000000_111 : Control_out <= 4'b0010;    // AND
+    12'b10_0000000_110 : Control_out <= 4'b0011;    // OR
+    12'b10_0000000_100 : Control_out <= 4'b0100;    // XOR
+    12'b10_0000000_001 : Control_out <= 4'b0101;    // SLL
+    12'b10_0000000_101 : Control_out <= 4'b0110;    // SRL
+    12'b10_0100000_101 : Control_out <= 4'b0111;    // SRA
+    12'b10_0000000_010 : Control_out <= 4'b1000;    // SLT
+    default            : Control_out <= 4'b0000; 
 
-    6'b00_0_000 : Control_out <= 4'b0010;
-    6'b01_0_001 : Control_out <= 4'b0110;
-    6'b10_0_000 : Control_out <= 4'b0010;
-    6'b10_1_000 : Control_out <= 4'b0110;
-    6'b10_0_111 : Control_out <= 4'b0000;
-    6'b10_0_110 : Control_out <= 4'b0001;
-    default : Control_out <=4'b0;  //added now
+   
 endcase
 end
 endmodule //alu_control
+
+// 6'b00_0_000 : Control_out <= 4'b0010;
+    //6'b01_0_001 : Control_out <= 4'b0110;
+    //6'b10_0_000 : Control_out <= 4'b0010;
+    //6'b10_1_000 : Control_out <= 4'b0110;
+    //6'b10_0_111 : Control_out <= 4'b0000;
+    //6'b10_0_110 : Control_out <= 4'b0001;
+    //default : Control_out <=4'b0;  //added now
