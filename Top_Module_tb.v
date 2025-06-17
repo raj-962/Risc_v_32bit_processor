@@ -1,13 +1,11 @@
 module Top_Module_tb;
-
-    reg clk, rst;
+     reg clk, rst;
 
     // Instantiate the DUT (Device Under Test)
 Top_Module uut(
     .clk 	(clk  ),
     .rst 	(rst  )
 );
-
     // Clock generation
     always #5 clk = ~clk;  // 10ns clock period
 
@@ -36,5 +34,4 @@ Top_Module uut(
 
         $finish;
     end
-
 endmodule

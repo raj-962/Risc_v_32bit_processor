@@ -1,7 +1,5 @@
 //program counter
-// type of register which holds the adress of next instruction
-
-
+// type of register which holds the address of next instruction
 module program_counter ( clk , rst , pc_in , pc_out );
     input clk,rst;
     input       [31:0]pc_in;  // 32 bit 
